@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Setting the defaults -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    
+    <!-- Attaching my main stylesheet and the fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Attaching the main script, but asking it not to run until the HTML is loaded -->
+    <script src="home-functions.js" defer></script>
+
+    <!-- Declare the title of the page -->
+    <title>PROG1700 Tristan Remple - Final Project</title>
+
+</head>
+<body>
+
+    <!-- The navigation bar with the countries drop-down -->
+    <nav id="country-menu" class="text-box">
+
+        <!-- Title is set to H1 for legibility -->
+        <h1 class="title">Countries of the World</h1>
+
+        <!-- Note: this is not a real form when used like this -->
+        <form id="select-country">
+
+            <!-- Labelling for best practices -->
+            <label for="country-name">Select a country:</label><br>
+
+            <!-- The dropdown is styled and given some dummy values -->
+            <select id="country-list" name="country-name" class="button dropdown-width">
+                <option id="Afghanistan" value="Afghanistan">Afghanistan</option>
+                <option id="Albania" value="Albania">Albania</option>
+                <option id="Algeria" value="Algeria">Algeria</option>
+                <option id="Andorra" value="Andorra">Andorra</option>
+                <option id="Angola" value="Angola">Angola</option>
+            </select>
+        </form>
+
+        <!-- Link to the quiz page mentioned in the bonus section -->
+        <div class="bottom">
+            <a id="start-quiz" href="quiz.html" class="button">Start Quiz</a>
+            <a href="../../gallery.html" class="button">Return to Gallery</a>
+        </div>
+    </nav>
+    
+    <!-- The main article of the page is set to hidden until it is activated by the javascript -->
+    <article id="country-details" class="text-box hidden">
+
+        <!-- The elements inside it are changed individually, so their names and classes are important -->
+        <h1 class="title" id="title">Canada</h1>
+        <img id="flag" src="flags/canada.png">
+
+        <!-- This button is especially important; it toggles the measurements used -->
+        <nav id="unit-toggle"><button id="switch-units" class="button">Show Miles</button></nav>
+
+        <!-- Again, using some dummy data as a placeholder -->
+        <p id="info">
+            <strong>Population:</strong> lots<br>
+            <strong>Area:</strong> so big kilometres<br>
+            <strong>Density:</strong> not that dense<br>
+            <strong>Percent of world population:</strong> idk
+        </p>
+
+        <!-- Link is targetted to a new tab -->
+        <a id="learn-more" href="https://en.wikipedia.org/wiki/Canada" class="button bottom" target="_blank">Learn More</a>
+    </article>
+
+    <!-- Map background, set to a different element so I can adjust the transparency -->
+    <div class="bg"></div>
+    
+</body>
+</html>

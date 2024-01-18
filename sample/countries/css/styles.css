@@ -1,0 +1,167 @@
+body {
+	display: grid;
+	grid-template-areas:
+	". column1 column2 .";
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	gap: 0px;
+	background-color: #D6A682;
+	min-height: 100vh;
+	min-width: 100vw;
+	margin: 0px;
+}
+
+.bg {
+	background-image: url("../flags/world-map.jpg");
+	background-size: cover;
+	background-position: 50%;
+	opacity: 0.5;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+}
+
+a {
+	text-decoration: none;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.leader {
+	display: grid;
+	grid-template-areas:
+	"number username"
+	"number date";
+	border-radius: 10px;
+}
+
+.score-number {
+	grid-area: number;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.score-name {
+	grid-area: username;
+	margin: 0px;
+}
+
+.score-date {
+	grid-area: date;
+	margin: 0px;
+}
+
+.new-entry {
+	background-color: #F7D4BA;
+}
+
+#country-menu {
+	grid-area: column1;
+}
+
+#country-details {
+	grid-area: column2;
+}
+
+#flag-display {
+	grid-area: column1;
+}
+
+#flag-choice {
+	grid-area: column2;
+}
+
+.text-box {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border: 5px solid #AE6853;
+	border-radius: 10px;
+	background-color: #F1B88E;
+	color: #432E32;
+	font-size: 16px;
+	font-family: 'Cairo', sans-serif;
+	margin: 20px 10px;
+	min-width: 300px;
+}
+
+.title {
+	color: #942F42;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+}
+
+.button {
+	background-color: #F7D4BA;
+	border: 5px solid #814E59;
+	border-radius: 10px;
+	color: #942F42;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+.button:hover {
+	font-style: italic;
+	letter-spacing: 2px;
+	background-color: #814E59;
+	color: #F7D4BA;
+}
+
+.button:focus {
+	font-style: italic;
+	letter-spacing: 2px;
+	background-color: #814E59;
+	color: #F7D4BA;
+}
+
+.bottom {
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.dropdown-width {
+	width: 100%;
+}
+
+.count {
+	align-self: center;
+}
+
+.hidden {
+	display: none;
+}
+
+#unit-toggle {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 799px) {
+
+	body {
+		display: grid;
+		grid-template-areas:
+		". column1 ."
+		". column2 .";
+		grid-template-columns: 1fr 300px 1fr;
+	}
+
+}

@@ -1,0 +1,118 @@
+[
+{
+    "Section": "S",
+    "Title": "Sasha",
+    "Description": "Pictures of Sasha!",
+    "Contents":
+    [
+        {
+            "Id": "01",
+            "Filename": "sasha-2v1.png",
+            "Alt": "A bust portrait of a person with pink hair and pale pinkish skin. They are wearing a frilly shirt. They have small, angular features.",
+            "Thumbnail": "sasha-2-thumb.png",
+            "ThumbAlt": "Thumbnail image of a bust portrait of a person with pink hair and pale pinkish skin. They are wearing a frilly shirt. They have small, angular features.",
+            "Warnings": "no warnings",
+            "Date": "January 1st, 2019",
+            "Description": "This is pretty old art"
+        },
+        {
+            "Id": "02",
+            "Filename": "sasha-3v1.png",
+            "Alt": "A person with pink hair and pale pinkish skin wearing a short black and white maid dress and striking a cute pose.",
+            "Thumbnail": "sasha-3-thumb.png",
+            "ThumbAlt": "Thumbnail image of a person with pink hair and pale pinkish skin wearing a short black and white maid dress and striking a cute pose.",
+            "Warnings": "no warnings",
+            "Date": "February 20th, 2020",
+            "Description": "This was originally part of an outfits meme, but then I only did one day of it."
+        },
+        {
+            "Id": "03",
+            "Filename": "sasha-7v2.png",
+            "Alt": "A cover design of a person with pink hair and pale pinkish skin walking in front of a hexagonal window of sky.",
+            "Thumbnail": "sasha-7-thumb.png",
+            "ThumbAlt": "Thumbnail image of a cover design of a person with pink hair and pale pinkish skin walking in front of a hexagonal window of sky.",
+            "Warnings": "iffy art",
+            "Date": "March 3rd, 2021",
+            "Description": "The original cover for the first chapter of the Unreality Agents webcomic."
+        },
+        {
+            "Id": "04",
+            "Filename": "sasha-20v2.png",
+            "Alt": "A headshot of a person with pink hair and pale pinkish skin smiling. Their hair is windblown.",
+            "Thumbnail": "sasha-20-thumb.png",
+            "ThumbAlt": "Thumbnail image of a headshot of a person with pink hair and pale pinkish skin smiling. Their hair is windblown.",
+            "Warnings": "no warnings",
+            "Date": "March 25th, 2021",
+            "Description": "I think this is where I really hit my stride drawing Sasha"
+        },
+        {
+            "Id": "05",
+            "Filename": "sasha-25v1.png",
+            "Alt": "A bust portrait of a person with pink hair and pale pinkish skin. They are wearing a frilly shirt. They have exaggerated, soft features.",
+            "Thumbnail": "sasha-25-thumb.png",
+            "ThumbAlt": "Thumbnail image of a bust portrait of a person with pink hair and pale pinkish skin. They are wearing a frilly shirt. They have exaggerated, soft features.",
+            "Warnings": "no warnings",
+            "Date": "April 7th 2021",
+            "Description": "A re-do of their original reference image. It's better, but it's not perfect."
+        },
+        {
+            "Id": "06",
+            "Filename": "sasha-28v2.png",
+            "Alt": "A chibi picture of a person with pink hair and pale pinkish skin leaping and giving peace signs with both hands near their smiling face.",
+            "Thumbnail": "sasha-28-thumb.png",
+            "ThumbAlt": "A thumbnail image of a chibi picture of a person with pink hair and pale pinkish skin leaping and giving peace signs with both hands near their smiling face.",
+            "Warnings": "chibi",
+            "Date": "June 15th, 2021",
+            "Description": "This one got printed as a charm!"
+        }
+    ]
+},
+{
+    "Section": "Kyr",
+    "Title": "Kyren",
+    "Description": "Pictures of Kyren!",
+    "Contents":
+    [
+        {
+            "Id": "k07",
+            "Filename": "kyren-10v1.png",
+            "Alt": "A person with wavy red hair and brown skin holding up a skull in a room with flowers on the floor.",
+            "Thumbnail": "kyren-10-thumb.png",
+            "ThumbAlt": "Thumbnail image of a person with wavy red hair and brown skin holding up a skull in a room with flowers on the floor.",
+            "Warnings": "perspective x__x",
+            "Date": "February 10th, 2019",
+            "Description": "This was a companion piece for something my ex drew. Gross."
+        },
+        {
+            "Id": "k08",
+            "Filename": "kyren-14v2.png",
+            "Alt": "A bust portrait of a person with wavy red hair and brown skin wearing a grey tanktop with the text \"bad\".",
+            "Thumbnail": "kyren-14-thumb.png",
+            "ThumbAlt": "Thumbnail image of a bust portrait of a person with wavy red hair and brown skin wearing a grey tanktop with the text \"bad\".",
+            "Warnings": "collarbones",
+            "Date": "March 12th, 2021",
+            "Description": "One of many pictures of Kyren, but this one is used as a reference sometimes."
+        },
+        {
+            "Id": "k09",
+            "Filename": "kyren-16.png",
+            "Alt": "A card-like design of a Mawile ginjinka.",
+            "Thumbnail": "kyren-16-thumb.png",
+            "ThumbAlt": "Thumbnail image of a card-like design of a Mawile ginjinka.",
+            "Warnings": "inaccurate card design",
+            "Date": "April 7th 2020",
+            "Description": "This was also meant to be part of a much larger project, but unlike some other pieces, I never had much intention of seeing it through."
+        },
+        {
+            "Id": "k10",
+            "Filename": "kyren-19v1.png",
+            "Alt": "A round spiky design displaying the head and shoulders of a person with wavy red hair and brown skin and a queasy manic smile.",
+            "Thumbnail": "kyren-19-thumb.png",
+            "ThumbAlt": "A thumbnail image of a round spiky design displaying the head and shoulders of a person with wavy red hair and brown skin and a queasy manic smile.",
+            "Warnings": "no warnings",
+            "Date": "July 15th, 2022",
+            "Description": "This one also got printed as a charm!"
+        }
+    ]
+}
+]
