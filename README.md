@@ -8,6 +8,7 @@
     - connect history to portfolio
     - display as a timeline?
 - add recent projects
+    - ADDvocacy site
     - birds app
     - laravel app
     - xiv shrine final
@@ -27,6 +28,7 @@
 - remove projects
     - poker hand
 - possible add projects
+    - ADDvocacy site
     - birds app
     - laravel app
     - xiv shrine final
@@ -42,7 +44,7 @@
     - ✅ change some text to white
 - XIV Shrine
     - API errors with lodestone (unfixable)
-    - implement https://www.npmjs.com/package/nodestone
+    - implement https://www.npmjs.com/package/nodestone if feasible
 
 ### Full Stack 2023-2
 - app: birds
@@ -55,4 +57,3 @@
 ### App Programming 2023-2
 - final: laravel
     - ✅ https://w0226139-inet-final.onrender.com/
-    

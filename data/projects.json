@@ -1,0 +1,194 @@
+[
+    {
+        "title": "ADDvocacy Website",
+        "year": 2023,
+        "month": 5,
+        "client": {
+            "name": "ADDvocacy",
+            "url": "https://www.addvocacy.org/"
+        },
+        "summary": "",
+        "technologies": [
+            "WebFlow",
+            "Google Scripting"
+        ],
+        "include": true,
+        "image": "addvocacy",
+        "url": "https://www.addvocacy.org/"
+    },
+    {
+        "title": "Aprimon Tracker V1",
+        "year": 2023,
+        "month": 8,
+        "client": {
+            "name": null,
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript",
+            "PHP",
+            "CSS"
+        ],
+        "include": true,
+        "image": "aprimon",
+        "url": "pkmn"
+    },
+    {
+        "title": "Countries Quiz",
+        "year": 2022,
+        "month": 11,
+        "client": {
+            "name": "NSCC Coursework",
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript",
+            "CSS"
+        ],
+        "include": false,
+        "image": "countries",
+        "url": "countries"
+    },
+    {
+        "title": "Facet Cards",
+        "year": 2022,
+        "month": 12,
+        "client": {
+            "name": null,
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript"
+        ],
+        "include": true,
+        "image": "facet",
+        "url": "facetcards"
+    },
+    {
+        "title": "Final Assignment XIV",
+        "year": 2023,
+        "month": 4,
+        "client": {
+            "name": "NSCC Coursework",
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript",
+            "CSS"
+        ],
+        "include": false,
+        "image": "fa-xiv",
+        "url": null
+    },
+    {
+        "title": "Gallery",
+        "year": 2023,
+        "month": 2,
+        "client": {
+            "name": null,
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript",
+            "CSS"
+        ],
+        "include": true,
+        "image": "gallery",
+        "url": "gallery"
+    },
+    {
+        "title": "Dragons Social",
+        "year": 2023,
+        "month": 11,
+        "client": {
+            "name": "NSCC Coursework",
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "PHP",
+            "sqlite",
+            "Laravel",
+            "Bootstrap"
+        ],
+        "include": true,
+        "image": "inet-final",
+        "url": "https://w0226139-inet-final.onrender.com/"
+    },
+    {
+        "title": "Transit Tracker",
+        "year": 2023,
+        "month": 2,
+        "client": {
+            "name": "NSCC Coursework",
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript"
+        ],
+        "include": false,
+        "image": "leaflet",
+        "url": "transittracker"
+    },
+    {
+        "title": "NSRAP Website",
+        "year": 2022,
+        "month": 7,
+        "client": {
+            "name": "Nova Scotia Rainbow Action Project",
+            "url": "https://nsrap.ca/"
+        },
+        "summary": "",
+        "technologies": [
+            "CSS",
+            "PHP"
+        ],
+        "include": false,
+        "image": "nsrap",
+        "url": "nsrap"
+    },
+    {
+        "title": "Squares Game",
+        "year": 2023,
+        "month": 1,
+        "client": {
+            "name": "NSCC Coursework",
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "JavaScript",
+            "CSS"
+        ],
+        "include": true,
+        "image": "squares",
+        "url": "squaregame"
+    },
+    {
+        "title": "Harbour Flight",
+        "year": 2023,
+        "month": 12,
+        "client": {
+            "name": "NSCC Coursework",
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "nodeJS",
+            "expressJS",
+            "reactJS",
+            "mongoDB",
+            "JavaScript",
+            "Bootstrap"
+        ],
+        "include": true,
+        "image": "birds",
+        "url": "https://w0226139-fullstack.onrender.com/"
+    }
+]
