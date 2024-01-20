@@ -1,59 +1,47 @@
 ## TO DO
-- decide on a format and focal point
-    - scrolling?
+- ✅ decide on a format and focal point
 - render resume in a more interesting way
-    - framework icons where applicable
-    - sections more distinct
-    - separate work by web and not-web
-    - connect history to portfolio
-    - display as a timeline?
-- add recent projects
-    - ADDvocacy site
-    - birds app
-    - laravel app
-    - xiv shrine final
-    - squares game
-    - transit tracker
-- add current projects
-    - aprimon v2
-    - gw2-comms
-    - pssh
-    - shelter supplies
-
-## MINIMUM
-- update:
-    - history
-    - skills
-    - summary
-- remove projects
-    - poker hand
-- possible add projects
-    - ADDvocacy site
-    - birds app
-    - laravel app
-    - xiv shrine final
-    - squares game
-    - transit tracker
+    - ✅ framework icons where applicable
+    - ✅ connect history to portfolio
+    - ✅ display as a timeline
+- add section for offline work
+- add contact form
+- write copy
+- fix mobile view
+- check accessibility
 
 ## PROJECTS
 
+### External
+- ✅ ADDvocacy site
+- ✅ aprimon v1
+- ✅ gallery sample
+- ✅ facet cards
+- ✅ this site
+
 ### Client Side 2023-1
-- Transit Tracker
+- ✅ Transit Tracker
     - ✅
-- Square Game
+- ✅ Square Game
     - ✅ change some text to white
 - XIV Shrine
     - API errors with lodestone (unfixable)
     - implement https://www.npmjs.com/package/nodestone if feasible
 
 ### Full Stack 2023-2
-- app: birds
+- ✅ app: birds
     - change colors in sass
-    - upload clean data to atlas
     - extend functionality
     - fix case sensitivity of search
     - ✅ submitted version: https://w0226139-fullstack.onrender.com/
 
 ### App Programming 2023-2
-- final: laravel
+- ✅ final: laravel
     - ✅ https://w0226139-inet-final.onrender.com/
+    - correct title
+
+### Upcoming
+- aprimon v2
+- gw2-comms
+- pssh
+- shelter supplies

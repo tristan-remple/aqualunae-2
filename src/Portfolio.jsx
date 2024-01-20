@@ -16,8 +16,13 @@ const Portfolio = () => {
     }, [])
 
     return (
-        <div id="portfolio">
-            { projects.map( item => <Project key={item.title} data={item} /> ) }
+        <div id="portfolio-outer">
+            <h2 id="portfolio">Portfolio</h2>
+            <img id="wave" src="img/wave.png" />
+            <div id="portfolio-inner">
+                { projects.map( item => <Project key={item.title} data={item} /> ) }
+            </div>
+            <div id="contact-bg"></div>
         </div>
     )
 }

@@ -1,6 +1,10 @@
 const Narbar = () => {
   return (
-    <div>Narbar</div>
+    <nav>
+      <a href="#cover">Summary</a>
+      <a href="#portfolio-outer">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
   )
 }
 

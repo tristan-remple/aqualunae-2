@@ -17,14 +17,14 @@
         "url": "https://www.addvocacy.org/"
     },
     {
-        "title": "Aprimon Tracker V1",
+        "title": "Aprimon Tracker",
         "year": 2023,
         "month": 8,
         "client": {
             "name": null,
             "url": null
         },
-        "summary": "",
+        "summary": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium aliquam est, ut eleifend justo blandit vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla vestibulum libero at urna maximus, ut sodales nisl ultricies. Morbi non accumsan mauris, vitae luctus neque. Nam vitae molestie arcu. Nullam ex elit, vestibulum ac justo a, ullamcorper venenatis velit. Proin risus eros, tristique a rutrum sit amet, pretium ac orci. In ut nulla sem. Phasellus fringilla turpis at mauris consequat imperdiet. Praesent laoreet quam enim. Nam porttitor augue sit amet enim finibus hendrerit. Duis quis vulputate lacus, ac ullamcorper nibh.",
         "technologies": [
             "JavaScript",
             "PHP",
@@ -184,11 +184,27 @@
             "expressJS",
             "reactJS",
             "mongoDB",
-            "JavaScript",
             "Bootstrap"
         ],
         "include": true,
         "image": "birds",
         "url": "https://w0226139-fullstack.onrender.com/"
+    },
+    {
+        "title": "AquaLunae",
+        "year": 2024,
+        "month": 1,
+        "client": {
+            "name": null,
+            "url": null
+        },
+        "summary": "",
+        "technologies": [
+            "reactJS",
+            "SCSS"
+        ],
+        "include": true,
+        "image": "aqlu-2",
+        "url": "/"
     }
 ]

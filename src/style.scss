@@ -1,0 +1,272 @@
+@use 'sass:color';
+
+$off-black: #292732;
+$dark-blue: #39334F;
+$blue: #474366;
+$teal: #3F5965;
+$mint: #6FB3B7;
+$off-white: #A5E2DE;
+
+@mixin accent-font {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin main-font {
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+}
+
+@mixin border {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: $mint;
+}
+
+@mixin flex-switch {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin box {
+    @include border;
+    background-color: $off-black;
+    color: $mint;
+    padding: 1rem;
+}
+
+@mixin centered-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin button {
+    @include border;
+    @include accent-font;
+    padding: 0.25rem;
+    background-color: $mint;
+    color: $off-black !important;
+    display: block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-align: center;
+    transition: all 0.5s ease;
+    font-weight: 700 !important;
+    &:hover, &:focus {
+        background-color: $off-white;
+        letter-spacing: 2px;
+    }
+}
+
+@mixin link {
+    color: $off-white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    &:hover, &:focus {
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+body {
+    @include main-font;
+    @include centered-column;
+    margin: 0;
+    background-color: $blue;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    position: relative;
+    z-index: 3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include accent-font;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 0.6rem 0;
+}
+
+#root {
+    @include centered-column;
+}
+
+#cover {
+    @include flex-switch;
+    @include box;
+    width: 70%;
+    max-width: 900px;
+}
+
+#logo {
+    width: 30%;
+    height: min-content;
+    object-fit: contain;
+    transform: translateX(-6rem) translateY(3rem) scale(150%) ;
+}
+
+#cover-info {
+    width: 75%;
+    line-height: 1.4rem;
+    .emphasis {
+        margin-left: 2rem;
+        @include accent-font;
+        font-size: 1.5em;
+        line-height: 1.4rem;
+    }
+    .tech-row {
+        min-height: 250px;
+    }
+}
+
+.tech-icon {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.25rem;
+    filter: saturate(50%) contrast(150%);
+}
+
+#wave {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-30%);
+}
+
+#portfolio-outer {
+    @include centered-column;
+    z-index: 1;
+    margin-top: 20%;
+    width: 100vw;
+    background-image: url("../img/tile-20-dark.png");
+    h2 {
+        position: absolute;
+        @include box;
+        top: -10rem;
+        width: 30%;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+#portfolio-inner {
+    @include centered-column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project {
+    @include box;
+    width: 60%;
+    margin: 1rem;
+    &:nth-child(even) {
+        transform: translateX(-10%);
+        .project-info {
+            float: left;
+            padding-left: 0.5rem;
+        }
+        .screen {
+            float: right;
+            transform: translateX(calc(6px + 25%)) translateY(25%) scale(150%);
+        }
+    }
+    &:nth-child(odd) {
+        transform: translateX(10%);
+        .project-info {
+            float: right;
+            padding-left: 0.5rem;
+        }
+        .screen {
+            float: left;
+            transform: translateX(calc(calc(-1rem - 2px) - 25%)) translateY(25%) scale(150%);
+        }
+    }
+}
+
+.project-info {
+    width: 60%;
+    height: min-content;
+    a {
+        @include link;
+    }
+}
+
+.screen {
+    width: 40%;
+    position: absolute;
+    img {
+        @include border;
+        width: 100%;
+    }
+}
+
+.button {
+    @include button;
+    width: 40%;
+    margin: 0.25rem auto 1rem auto;
+}
+
+nav {
+    @include flex-switch;
+    justify-content: center;
+    background-color: $off-black;
+    border-bottom: 2px solid $mint;
+    width: 100%;
+    margin-bottom: 2rem;
+    a {
+        width: 20%;
+        @include button;
+        margin: 0.5rem;
+    }
+    position: sticky;
+    top: -2px;
+    z-index: 5;
+}
+
+#contact {
+    @include box;
+    width: 70%;
+    max-width: 900px;
+    a {
+        @include link;
+    }
+}
+
+#contact-bg {
+    background-image: linear-gradient(color.adjust($mint, $alpha: -1), color.adjust($mint, $alpha: -0.4));
+    width: 100%;
+    height: 27rem;
+    position: absolute;
+    bottom: -20rem;
+    z-index: 1;
+}
+
+#contact-outer {
+    @include centered-column;
+    width: 100vw;
+    height: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-image: url("../img/tile-20-dark.png");
+    z-index: 1;
+}

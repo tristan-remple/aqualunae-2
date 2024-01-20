@@ -1,0 +1,302 @@
+body {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #474366;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  position: relative;
+  z-index: 3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 0.6rem 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cover {
+  display: flex;
+  flex-direction: row;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  background-color: #292732;
+  color: #6FB3B7;
+  padding: 1rem;
+  width: 70%;
+  max-width: 900px;
+}
+@media screen and (max-width: 600px) {
+  #cover {
+    flex-direction: column;
+  }
+}
+
+#logo {
+  width: 30%;
+  height: -moz-min-content;
+  height: min-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translateX(-6rem) translateY(3rem) scale(150%);
+}
+
+#cover-info {
+  width: 75%;
+  line-height: 1.4rem;
+}
+#cover-info .emphasis {
+  margin-left: 2rem;
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 1.4rem;
+}
+#cover-info .tech-row {
+  min-height: 250px;
+}
+
+.tech-icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.25rem;
+  filter: saturate(50%) contrast(150%);
+}
+
+#wave {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-30%);
+}
+
+#portfolio-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-top: 20%;
+  width: 100vw;
+  background-image: url("../img/tile-20-dark.png");
+}
+#portfolio-outer h2 {
+  position: absolute;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  background-color: #292732;
+  color: #6FB3B7;
+  padding: 1rem;
+  top: -10rem;
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#portfolio-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  background-color: #292732;
+  color: #6FB3B7;
+  padding: 1rem;
+  width: 60%;
+  margin: 1rem;
+}
+.project:nth-child(even) {
+  transform: translateX(-10%);
+}
+.project:nth-child(even) .project-info {
+  float: left;
+  padding-left: 0.5rem;
+}
+.project:nth-child(even) .screen {
+  float: right;
+  transform: translateX(calc(6px + 25%)) translateY(25%) scale(150%);
+}
+.project:nth-child(odd) {
+  transform: translateX(10%);
+}
+.project:nth-child(odd) .project-info {
+  float: right;
+  padding-left: 0.5rem;
+}
+.project:nth-child(odd) .screen {
+  float: left;
+  transform: translateX(calc(-1rem - 2px - 25%)) translateY(25%) scale(150%);
+}
+
+.project-info {
+  width: 60%;
+  height: -moz-min-content;
+  height: min-content;
+}
+.project-info a {
+  color: #A5E2DE;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.project-info a:hover, .project-info a:focus {
+  color: white;
+  text-decoration: underline;
+}
+
+.screen {
+  width: 40%;
+  position: absolute;
+}
+.screen img {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  width: 100%;
+}
+
+.button {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.25rem;
+  background-color: #6FB3B7;
+  color: #292732 !important;
+  display: block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  font-weight: 700 !important;
+  width: 40%;
+  margin: 0.25rem auto 1rem auto;
+}
+.button:hover, .button:focus {
+  background-color: #A5E2DE;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #292732;
+  border-bottom: 2px solid #6FB3B7;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: -2px;
+  z-index: 5;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav a {
+  width: 20%;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.25rem;
+  background-color: #6FB3B7;
+  color: #292732 !important;
+  display: block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  font-weight: 700 !important;
+  margin: 0.5rem;
+}
+nav a:hover, nav a:focus {
+  background-color: #A5E2DE;
+  letter-spacing: 2px;
+}
+
+#contact {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  background-color: #292732;
+  color: #6FB3B7;
+  padding: 1rem;
+  width: 70%;
+  max-width: 900px;
+}
+#contact a {
+  color: #A5E2DE;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+#contact a:hover, #contact a:focus {
+  color: white;
+  text-decoration: underline;
+}
+
+#contact-bg {
+  background-image: linear-gradient(rgba(111, 179, 183, 0), rgba(111, 179, 183, 0.6));
+  width: 100%;
+  height: 27rem;
+  position: absolute;
+  bottom: -20rem;
+  z-index: 1;
+}
+
+#contact-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-image: url("../img/tile-20-dark.png");
+  z-index: 1;
+}
