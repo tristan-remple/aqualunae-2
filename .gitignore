@@ -23,6 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# planning documents
 img/planning
-img/skills/bad-contrast
-public/sample
+
+# excluded sample projects
+public/sample/countries
+public/sample/nsrap
+public/sample/transittracker
