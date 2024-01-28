@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Project from './Project'
+import ProjectEven from './ProjectEven'
+import ProjectOdd from './ProjectOdd'
 
 const Portfolio = () => {
     const [ projects, setProjects ] = useState([])
@@ -15,12 +17,20 @@ const Portfolio = () => {
             })
     }, [])
 
+    const toDisplay = projects.map( (item, index) => {
+        if (index % 2 === 0) {
+            return <ProjectEven key={item.title} data={item} />
+        } else {
+            return <ProjectOdd key={item.title} data={item} />
+        }
+    } )
+
     return (
         <div id="portfolio-outer">
             <h2 id="portfolio">Portfolio</h2>
             <img id="wave" src="img/wave.png" />
             <div id="portfolio-inner">
-                { projects.map( item => <Project key={item.title} data={item} /> ) }
+                { toDisplay }
             </div>
             <div id="contact-bg"></div>
         </div>

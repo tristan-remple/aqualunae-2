@@ -98,6 +98,10 @@ body {
     z-index: 3;
 }
 
+:focus {
+    outline: 4px double $off-white;
+}
+
 h1, h2, h3, h4, h5, h6 {
     @include accent-font;
 }
@@ -156,13 +160,13 @@ h3 {
 #portfolio-outer {
     @include centered-column;
     z-index: 1;
-    margin-top: 20%;
+    margin-top: 10rem;
     width: 100vw;
     background-image: url("../img/tile-20-dark.png");
     h2 {
         position: absolute;
         @include box;
-        top: -10rem;
+        top: -8rem;
         width: 30%;
         text-align: center;
         font-size: 2rem;
@@ -175,48 +179,79 @@ h3 {
     max-width: 1200px;
 }
 
+.portfolio-display {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
 .project {
     @include box;
-    width: 60%;
+    width: 80%;
     margin: 1rem;
-    &:nth-child(even) {
-        transform: translateX(-10%);
-        .project-info {
-            float: left;
-            padding-left: 0.5rem;
-        }
-        .screen {
-            float: right;
-            transform: translateX(calc(6px + 25%)) translateY(25%) scale(150%);
-        }
-    }
-    &:nth-child(odd) {
-        transform: translateX(10%);
-        .project-info {
-            float: right;
-            padding-left: 0.5rem;
-        }
-        .screen {
-            float: left;
-            transform: translateX(calc(calc(-1rem - 2px) - 25%)) translateY(25%) scale(150%);
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    // &:nth-child(even) {
+    //     transform: translateX(-10%);
+    //     .project-info {
+    //         float: left;
+    //         padding-left: 0.5rem;
+    //     }
+    //     .screen {
+    //         float: right;
+    //         transform: translateX(calc(6px + 25%)) translateY(25%) scale(150%);
+    //     }
+    // }
+    // &:nth-child(odd) {
+    //     transform: translateX(10%);
+    //     .project-info {
+    //         float: right;
+    //         padding-left: 0.5rem;
+    //     }
+    //     .screen {
+    //         float: left;
+    //         transform: translateX(calc(calc(-1rem - 2px) - 25%)) translateY(25%) scale(150%);
+    //     }
+    // }
 }
 
 .project-info {
-    width: 60%;
-    height: min-content;
+    width: 55%;
     a {
         @include link;
     }
 }
 
 .screen {
-    width: 40%;
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
     position: absolute;
+    height: calc(100% - 2rem);
+    z-index: 5;
     img {
         @include border;
         width: 100%;
+    }
+}
+
+.p-even {
+    .project {
+        align-self: flex-start;
+    }
+    .screen {
+        align-self: flex-end;
+    }
+}
+
+.p-odd {
+    .project {
+        align-self: flex-end;
+        align-items: flex-end;
+    }
+    .screen {
+        align-self: flex-start;
     }
 }
 
@@ -269,4 +304,59 @@ nav {
     padding-bottom: 2rem;
     background-image: url("../img/tile-20-dark.png");
     z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-display {
+        width: 100%;
+    }
+
+    .project, #cover {
+        width: 90%;
+        align-self: center !important;
+    }
+
+    .project *, #cover * {
+        width: 100%;
+    }
+
+    .tech-row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .tech-icon {
+        width: 5rem !important;
+    }
+
+    .screen {
+        display: none;
+    }
+
+    #cover {
+        position: relative;
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
+
+    #logo {
+        position: absolute;
+        height: 12rem;
+        top: -6rem;
+        transform: none;
+    }
+
+    nav a {
+        width: 90%;
+        align-self: center;
+    }
+
+    #contact-outer {
+        height: 24rem;
+    }
+
+    #contact-bg {
+        bottom: -24rem
+    }
 }

@@ -7,7 +7,7 @@
             "name": "ADDvocacy",
             "url": "https://www.addvocacy.org/"
         },
-        "summary": "",
+        "summary": "Consulted with client and project manager to establish requirements. Added new content to a WebFlow website, following existing design patterns. Used Google Scripting to improve and automate intake workflow. Did research into eLearning and other platforms.",
         "technologies": [
             "WebFlow",
             "Google Scripting"
@@ -24,7 +24,7 @@
             "name": null,
             "url": null
         },
-        "summary": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium aliquam est, ut eleifend justo blandit vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla vestibulum libero at urna maximus, ut sodales nisl ultricies. Morbi non accumsan mauris, vitae luctus neque. Nam vitae molestie arcu. Nullam ex elit, vestibulum ac justo a, ullamcorper venenatis velit. Proin risus eros, tristique a rutrum sit amet, pretium ac orci. In ut nulla sem. Phasellus fringilla turpis at mauris consequat imperdiet. Praesent laoreet quam enim. Nam porttitor augue sit amet enim finibus hendrerit. Duis quis vulputate lacus, ac ullamcorper nibh.",
+        "summary": "Created a vanilla JavaScript app with a high degree of interactivity, allowing the user to interact with the dataset. Implemented a simple PHP script to communicate with the server. Designed and implemented the front-end styling. Created a JSON dataset to reflect existing information.",
         "technologies": [
             "JavaScript",
             "PHP",
@@ -42,14 +42,14 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "",
+        "summary": "Created a vanilla JavaScript app that fetches data from an API and displays it. Implemented a quiz interface. Designed and implemented basic styling.",
         "technologies": [
             "JavaScript",
             "CSS"
         ],
         "include": false,
         "image": "countries",
-        "url": "countries"
+        "url": "sample/countries/index.html"
     },
     {
         "title": "Facet Cards",
@@ -59,7 +59,7 @@
             "name": null,
             "url": null
         },
-        "summary": "",
+        "summary": "Created a vanilla JavaScript app that displays randomized data from a JSON dataset. Created the JSON dataset.",
         "technologies": [
             "JavaScript"
         ],
@@ -75,10 +75,10 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "",
+        "summary": "Created a vanilla JavaScript app that displays information fetched from an API and from a local JSON dataset. Designed and implemented complex SCSS styling.",
         "technologies": [
             "JavaScript",
-            "CSS"
+            "SCSS"
         ],
         "include": false,
         "image": "fa-xiv",
@@ -92,14 +92,14 @@
             "name": null,
             "url": null
         },
-        "summary": "",
+        "summary": "Created a vanilla JavaScript page that displays an interactive gallery. Designed and implemented basic styling.",
         "technologies": [
             "JavaScript",
             "CSS"
         ],
         "include": true,
         "image": "gallery",
-        "url": "gallery"
+        "url": "sample/gallery/index.html"
     },
     {
         "title": "Dragons Social",
@@ -109,7 +109,7 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "",
+        "summary": "Created a Laravel app with full interactivity, including data manipulation and user registration. Met project requirements on a tight deadline. Implemented both sqlite and MySQL databases.",
         "technologies": [
             "PHP",
             "sqlite",
@@ -128,13 +128,13 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "",
+        "summary": "Created a JavaScript app that displays HRM buses in real time, fetching data from an API.",
         "technologies": [
             "JavaScript"
         ],
         "include": false,
         "image": "leaflet",
-        "url": "transittracker"
+        "url": "sample/transittracker/index.html"
     },
     {
         "title": "NSRAP Website",
@@ -144,14 +144,14 @@
             "name": "Nova Scotia Rainbow Action Project",
             "url": "https://nsrap.ca/"
         },
-        "summary": "",
+        "summary": "Created a data-rich website with many pages. Designed and implemented CSS styling. Consulted with a Board to establish and meet requirements.",
         "technologies": [
             "CSS",
             "PHP"
         ],
         "include": false,
         "image": "nsrap",
-        "url": "nsrap"
+        "url": "sample/nsrap/index.php"
     },
     {
         "title": "Squares Game",
@@ -161,14 +161,14 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "",
+        "summary": "Created a vanilla JavaScript app that fetches data from an API to render an interactive game. Designed and implemented basic styling.",
         "technologies": [
             "JavaScript",
             "CSS"
         ],
         "include": true,
         "image": "squares",
-        "url": "squaregame"
+        "url": "sample/squaregame/index.html"
     },
     {
         "title": "Harbour Flight",
@@ -178,7 +178,7 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "",
+        "summary": "Created a full-stack JavaScript application, using node, express, and react over a mongo database. Met project requirements on a tight deadline. Created a JSON dataset to reflect existing information.",
         "technologies": [
             "nodeJS",
             "expressJS",
@@ -198,7 +198,7 @@
             "name": null,
             "url": null
         },
-        "summary": "",
+        "summary": "Created a react app that formats and displays information from a JSON dataset. Designed and implemented complex styling using SCSS. Designed vector graphics. Created a JSON dataset to reflect existing information.",
         "technologies": [
             "reactJS",
             "SCSS"
