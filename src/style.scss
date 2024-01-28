@@ -191,28 +191,6 @@ h3 {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    // &:nth-child(even) {
-    //     transform: translateX(-10%);
-    //     .project-info {
-    //         float: left;
-    //         padding-left: 0.5rem;
-    //     }
-    //     .screen {
-    //         float: right;
-    //         transform: translateX(calc(6px + 25%)) translateY(25%) scale(150%);
-    //     }
-    // }
-    // &:nth-child(odd) {
-    //     transform: translateX(10%);
-    //     .project-info {
-    //         float: right;
-    //         padding-left: 0.5rem;
-    //     }
-    //     .screen {
-    //         float: left;
-    //         transform: translateX(calc(calc(-1rem - 2px) - 25%)) translateY(25%) scale(150%);
-    //     }
-    // }
 }
 
 .project-info {
