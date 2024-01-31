@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import Project from './Project'
 import ProjectEven from './ProjectEven'
 import ProjectOdd from './ProjectOdd'
 
