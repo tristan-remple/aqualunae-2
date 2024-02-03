@@ -32,7 +32,7 @@
         ],
         "include": true,
         "image": "aprimon",
-        "url": "pkmn"
+        "url": "sample/pkmn/index.html"
     },
     {
         "title": "Countries Quiz",
@@ -65,7 +65,7 @@
         ],
         "include": true,
         "image": "facet",
-        "url": "facetcards"
+        "url": "sample/facet/index.html"
     },
     {
         "title": "Final Assignment XIV",
