@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Test",
+        "puzzleSize": 6,
+        "solveTime": "2:35"
+    },
+    {
+        "name": "OtherTest",
+        "puzzleSize": 8,
+        "solveTime": "4:59"
+    }
+]
