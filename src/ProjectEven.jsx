@@ -8,7 +8,7 @@ const ProjectEven = ({ data }) => {
     ]
 
     return (
-        <div class="portfolio-display p-even">
+        <div className="portfolio-display p-even">
             <div className="project">
                 <div className="project-info">
                     <h3>{title}</h3>

@@ -1,10 +1,12 @@
-import { logEvent } from 'firebase/app'
+import analytics from "./Analytics"
+import { logEvent } from "firebase/analytics"
 
-const Narbar = ({ ga }) => {
+const Narbar = () => {
 
   const navClick = (event) => {
     const target = event.target.innerText
-    logEvent(ga, 'select_content', {
+    console.log(target)
+    logEvent(analytics, 'select_content', {
       content_type: "section",
       content_id: target
     })

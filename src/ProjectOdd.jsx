@@ -8,7 +8,7 @@ const ProjectOdd = ({ data }) => {
     ]
 
     return (
-        <div class="portfolio-display p-odd">
+        <div className="portfolio-display p-odd">
             <a href={url} className="screen"><img src={`../img/screens/${image}.png`} /></a>
             <div className="project">
                 <div className="project-info">
