@@ -3,10 +3,16 @@ import { logEvent } from "firebase/analytics"
 
 const Narbar = () => {
 
+  console.log(analytics)
+
   const navClick = (event) => {
     const target = event.target.innerText
     console.log(target)
     logEvent(analytics, 'select_content', {
+      content_type: "section",
+      content_id: target
+    })
+    logEvent(analytics, 'content_id_portfolio', {
       content_type: "section",
       content_id: target
     })

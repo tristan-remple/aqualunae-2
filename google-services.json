@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69601742720",
+    "project_id": "aqualunae-b894f",
+    "storage_bucket": "aqualunae-b894f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69601742720:android:bcc231ee632f7c91da3b65",
+        "android_client_info": {
+          "package_name": "aqualunae.ca"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-QcVIy90jtKcP3WE3MnNNh9djq8Z0zjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
