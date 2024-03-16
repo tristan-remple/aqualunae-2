@@ -33,6 +33,14 @@
             chosenCell.currentState = 0;
         }
 
+        // send data to analytics
+        const size = json.rows.length;
+        gtag('event', 'select_content', {
+            content_type: "square",
+            content_id: squareID,
+            level_name: size
+        })
+
         // set the progress checker to blank
         document.getElementById("display-check").innerText = ".";
 
@@ -93,7 +101,7 @@
                     incomplete++;
                 }
             }
-        }
+        } // end for loop
 
         // find the gameboard and the place where the validation text displays
         const board = document.getElementById("gameBoard");
@@ -103,6 +111,10 @@
         // display a congratulatory message
         if (incomplete === 0 && incorrect === 0) {
             displayCheck.innerText = "You did it!";
+            gtag('event', 'level_end', {
+                level_name: size,
+                success: true
+            })
 
         // if the user is not in challenge mode
         } else if (board.getAttribute("data-challenge") === "false") {
@@ -123,6 +135,11 @@
             } else {
                 displayCheck.innerText = "Puzzle incorrect.";
             }
+
+            gtag('event', 'level_end', {
+                level_name: size,
+                success: false
+            })
         }
     }
 
@@ -282,6 +299,11 @@
         .then(response => response.json())
         .then(json => {
 
+            const size = json.rows.length;
+            gtag('event', 'level_start', {
+                level_name: size
+            })
+
             // find the main container and wipe it
             const div = document.getElementById("theGame");
             div.innerHTML = "";
@@ -405,5 +427,22 @@
 
     // upon loading the page, start a new puzzle (not challenge mode)
     newPuzzle(false);
+
+    // function that pauses link navigation to register events with analytics
+    function trackButton(event) {
+        event.preventDefault()
+        gtag('event', 'select_content', {
+            content_type: "button",
+            content_id: event.target.id
+        })
+        window.location.href = event.target.href
+    }
+
+    // add analytics to the two navugation buttons
+    const commentButton = document.getElementById("comment-nav")
+    commentButton.addEventListener("click", function(event) { trackButton(event) })
+
+    const leaderButton = document.getElementById("leaderboard-nav")
+    leaderButton.addEventListener("click", function(event) { trackButton(event) })
 
 })();

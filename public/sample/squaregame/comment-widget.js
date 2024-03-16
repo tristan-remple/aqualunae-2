@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = 'comment-widget-dark.css';
+// const s_stylePath = 'comment-widget-dark.css';
 const s_formId = '1FAIpQLScjDG6ACFCmBo58067pE_LqmXTWZW7xxIz7R38HLJFbTtiM3Q';
 const s_nameId = '2099862566';
 const s_websiteId = '408944860';
@@ -76,11 +76,11 @@ const s_rightButtonText = '>>';
 if (s_fixRarebitIndexPage) {s_includeUrlParameters = true}
 
 // Apply CSS
-const c_cssLink = document.createElement('link');
-c_cssLink.type = 'text/css';
-c_cssLink.rel = 'stylesheet';
-c_cssLink.href = s_stylePath;
-document.getElementsByTagName('head')[0].appendChild(c_cssLink);
+// const c_cssLink = document.createElement('link');
+// c_cssLink.type = 'text/css';
+// c_cssLink.rel = 'stylesheet';
+// c_cssLink.href = s_stylePath;
+// document.getElementsByTagName('head')[0].appendChild(c_cssLink);
 
 // HTML Form
 const v_mainHtml = `

@@ -3,23 +3,16 @@
     <head>
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-694D2YNCCC"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-694D2YNCCC');
-        </script>
+        <script src='game.js' defer></script>
 
         <title>3 in a Row Square Game</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div id="theGame"></div>
-        <script src='game.js'></script>
         <nav class="game-nav">
-            <a href="comment.html" class="button">Leave a Comment</a>
-            <a href="leaderboard.html" class="button">Leaderboard</a>
+            <a href="comment.html" class="button" id="comment-nav">Leave a Comment</a>
+            <a href="leaderboard.html" class="button" id="leaderboard-nav">Leaderboard</a>
         </nav>
     </body>
 </html>
