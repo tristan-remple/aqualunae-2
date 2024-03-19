@@ -168,3 +168,7 @@ button:hover, #c_submitButton:hover, .button:hover {
     text-align: center;
     font-size: 1.25rem;
 }
+
+.no-display {
+    color: #1E3945;
+}

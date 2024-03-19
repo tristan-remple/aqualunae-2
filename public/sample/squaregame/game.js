@@ -42,7 +42,9 @@
         })
 
         // set the progress checker to blank
-        document.getElementById("display-check").innerText = ".";
+        const displayCheck = document.getElementById("display-check")
+        displayCheck.innerText = ".";
+        displayCheck.classList.add("no-display");
 
         // redraw the board
         drawBoard(json, false);
@@ -141,6 +143,8 @@
                 success: false
             })
         }
+
+        displayCheck.classList.remove("no-display");
     }
 
     // function to draw the board
@@ -188,7 +192,7 @@
 
                 // add a lock icon to identify cells that are locked
                 } else if (json.rows[r][c].canToggle === false) {
-                    cell.innerText = "⚿";
+                    cell.innerHTML = "<i class=\"fa-solid fa-lock\"></i>";
                 }
                 row.appendChild(cell);
             }
@@ -321,6 +325,7 @@
             // blank element where the text from the "check puzzle" button displays
             const displayCheck = document.createElement("div");
             displayCheck.id = "display-check";
+            displayCheck.classList.add("no-display");
 
             // needs a . in order to consistently take up the same amount of space
             displayCheck.innerText = ".";
