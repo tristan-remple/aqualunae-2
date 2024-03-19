@@ -61,7 +61,7 @@
         // toggle both the visible state and the true state
         if (checkbox.checked === false) {
             checkbox.checked = true;
-            visibleCheck.innerText = "✓";
+            visibleCheck.innerHTML = "<i class=\"fa-solid fa-check\"></i>";
         } else {
             checkbox.checked = false;
             visibleCheck.innerText = "";
@@ -92,7 +92,7 @@
                     if (checkbox === null || checkbox.checked) {
 
                         // add an X to the square to mark it
-                        wrongSquare.innerText = "×";
+                        wrongSquare.innerHTML = "<i class=\"fa-solid fa-xmark\"></i>";
                     }
 
                     // and increase the count of incorrect squares
