@@ -26,7 +26,7 @@ const ProjectEven = ({ data }) => {
                         : client.name ? <p>Built for {client.name} in {monthNames[month - 1]} of {year}.</p>
                         : <p>Built in {monthNames[month - 1]} of {year}.</p> }
                     <p>{summary}</p>
-                    <a className="button" href={url} onClick={ logEvent } >View Here</a>
+                    <a className="button" href={url} onClick={ navClick } >View Here</a>
                     <div className="tech-row">
                         { technologies.map(tech => <img 
                             key={`${title}-${tech}`}
@@ -38,7 +38,7 @@ const ProjectEven = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <a href={url} className="screen" onClick={ logEvent } ><img src={`../img/screens/${image}.png`} /></a>
+            <a href={url} className="screen" onClick={ navClick } ><img src={`../img/screens/${image}.png`} /></a>
         </div>
     )
 }
