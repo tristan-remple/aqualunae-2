@@ -157,6 +157,10 @@ button:hover, #c_submitButton:hover, .button:hover {
     margin-left: 0.5rem;
 }
 
+.c-site {
+    color: #3F8289;
+}
+
 .game-nav {
     display: flex;
     width: 100%;
