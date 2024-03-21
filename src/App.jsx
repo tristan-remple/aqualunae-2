@@ -1,4 +1,4 @@
-import NavBar from './Narbar'
+import NavBar from './Navbar'
 import Cover from './Cover'
 import Portfolio from './Portfolio'
 import Contact from './Contact'

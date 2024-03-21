@@ -1,13 +1,10 @@
 import analytics from "./Analytics"
 import { logEvent } from "firebase/analytics"
 
-const Narbar = () => {
-
-  console.log(analytics)
+const Navbar = () => {
 
   const navClick = (event) => {
     const target = event.target.innerText
-    console.log(target)
     logEvent(analytics, 'select_content', {
       content_type: "section",
       content_id: target
@@ -23,4 +20,4 @@ const Narbar = () => {
   )
 }
 
-export default Narbar
+export default Navbar
