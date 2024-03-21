@@ -3,6 +3,7 @@ import Cover from './Cover'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import './css/style.css'
+import Consent from './consent'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Cover />
       <Portfolio />
       <Contact />
+      <Consent />
     </>
   )
 }

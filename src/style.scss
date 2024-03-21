@@ -284,6 +284,23 @@ nav {
     z-index: 1;
 }
 
+#consent {
+    @include flex-switch;
+    justify-content: center;
+    background-color: $off-black;
+    border-top: 2px solid $mint;
+    width: 100%;
+    color: $mint;
+    #dismiss {
+        width: 20%;
+        @include button;
+        margin: 0.5rem;
+    }
+    position: sticky;
+    bottom: -2px;
+    z-index: 5;
+}
+
 @media screen and (max-width: 600px) {
     .portfolio-display {
         width: 100%;
@@ -325,7 +342,7 @@ nav {
         transform: none;
     }
 
-    nav a {
+    nav a, #dismiss {
         width: 90%;
         align-self: center;
     }

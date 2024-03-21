@@ -309,6 +309,49 @@ nav a:hover, nav a:focus {
   z-index: 1;
 }
 
+#consent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #292732;
+  border-top: 2px solid #6FB3B7;
+  width: 100%;
+  color: #6FB3B7;
+  position: sticky;
+  bottom: -2px;
+  z-index: 5;
+}
+@media screen and (max-width: 600px) {
+  #consent {
+    flex-direction: column;
+  }
+}
+#consent #dismiss {
+  width: 20%;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: #6FB3B7;
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.25rem;
+  background-color: #6FB3B7;
+  color: #292732 !important;
+  display: block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  font-weight: 700 !important;
+  margin: 0.5rem;
+}
+#consent #dismiss:hover, #consent #dismiss:focus {
+  background-color: #A5E2DE;
+  letter-spacing: 2px;
+}
+
 @media screen and (max-width: 600px) {
   .portfolio-display {
     width: 100%;
@@ -342,7 +385,7 @@ nav a:hover, nav a:focus {
     top: -6rem;
     transform: none;
   }
-  nav a {
+  nav a, #dismiss {
     width: 90%;
     align-self: center;
   }
