@@ -1,5 +1,21 @@
 (function(){
 
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-694D2YNCCC');
+
+    function trackButton(event) {
+        event.preventDefault()
+        gtag('event', 'select_content', {
+            content_type: "button",
+            content_id: event.target.id,
+            page: "leaderboard"
+        })
+        window.location.href = event.target.href
+    }
+
     const boardDisplay = document.getElementById("leaderboard")
 
     const title = document.createElement("h1")
@@ -51,6 +67,8 @@
                 sizeLink.classList.add("button")
                 sizeLink.href = "leaderboard.html?size=" + sz
                 sizeLink.innerText = sz
+                sizeLink.id = sz
+                sizeLink.addEventListener("click", function(event) { trackButton(event) })
                 navList.appendChild(sizeLink)
             })
 
@@ -101,6 +119,19 @@
                 submit.type = "submit"
                 submit.classList.add("button")
                 leaderForm.appendChild(submit)
+
+                function postScore() {
+                    timeArray = time.split(":")
+                    seconds = (timeArray[0] * 60) + timeArray[1]
+
+                    gtag('event', 'post_score', {
+                        score: seconds,
+                        level: size,
+                        character: input.value
+                    })
+                }
+                
+                submit.addEventListener("click", postScore)
 
                 boardDisplay.appendChild(leaderForm)
             }

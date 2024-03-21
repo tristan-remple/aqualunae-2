@@ -438,7 +438,8 @@
         event.preventDefault()
         gtag('event', 'select_content', {
             content_type: "button",
-            content_id: event.target.id
+            content_id: event.target.id,
+            page: "game"
         })
         window.location.href = event.target.href
     }

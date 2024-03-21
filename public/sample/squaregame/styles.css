@@ -71,6 +71,7 @@ button, #c_submitButton, .button {
     display: flex;
     width: 40%;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .button {
@@ -161,6 +162,7 @@ button:hover, #c_submitButton:hover, .button:hover {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .leader-entry {
@@ -171,4 +173,13 @@ button:hover, #c_submitButton:hover, .button:hover {
 
 .no-display {
     color: #1E3945;
+}
+
+#banner {
+    background-color: #232B43;
+    position: fixed;
+    bottom: 0px;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
 }
