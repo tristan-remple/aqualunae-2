@@ -3,7 +3,7 @@ import Cover from './Cover'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import './css/style.css'
-import Consent from './consent'
+import Consent from './Consent'
 
 function App() {
 
