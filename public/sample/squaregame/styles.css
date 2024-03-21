@@ -179,7 +179,12 @@ button:hover, #c_submitButton:hover, .button:hover {
     background-color: #232B43;
     position: fixed;
     bottom: 0px;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: 2rem;
     width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

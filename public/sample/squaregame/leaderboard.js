@@ -4,8 +4,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-694D2YNCCC');
-
     function trackButton(event) {
         event.preventDefault()
         gtag('event', 'select_content', {

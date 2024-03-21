@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { setConsent } from "firebase/analytics"
 
 const Consent = () => {
 
@@ -7,6 +8,12 @@ const Consent = () => {
     const [ visible, setVisible ] = useState(consent)
 
     const dismiss = () => {
+        setConsent({
+            ad_storage: "granted",
+            ad_personalization: "granted",
+            ad_user_data: "granted",
+            analytics_storage: "granted"
+        })
         setVisible(false)
         window.sessionStorage.setItem("consent", "clicked")
     }
@@ -15,8 +22,8 @@ const Consent = () => {
         console.log("displaying")
         return (
             <div id="consent">
-                <p>This site sends data to Google Analytics. By visiting this page, you consent to the tracking of your usage.</p>
-                <div id="dismiss" onClick={ dismiss } >Dismiss</div>
+                <p>This site sends data to Google Analytics. Is that OK?</p>
+                <div id="dismiss" onClick={ dismiss } >OK</div>
             </div>
         )
     }

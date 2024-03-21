@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app"
-import { getAnalytics } from "firebase/analytics"
+import { getAnalytics, setConsent } from "firebase/analytics"
 
 const browserConfig = {
     apiKey: "AIzaSyAMquVtK_Tmv_b6aTd326BUwR2UYSFRhoA",
@@ -12,13 +12,15 @@ const browserConfig = {
     debugMode: true
 }
 
-const androidConfig = {
-    apiKey: "AIzaSyC-QcVIy90jtKcP3WE3MnNNh9djq8Z0zjE",
-    projectId: "aqualunae-b894f",
-    appId: "1:69601742720:android:bcc231ee632f7c91da3b65",
-    measurementId: "G-694D2YNCCC",
-    debugMode: true
-}
+setConsent({
+    ad_storage: "denied",
+    ad_personalization: "denied",
+    ad_user_data: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "denied"
+})
 
 const app = initializeApp(browserConfig)
 const analytics = getAnalytics(app)
