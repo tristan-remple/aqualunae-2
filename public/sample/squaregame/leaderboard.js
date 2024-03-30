@@ -70,7 +70,7 @@
                 navList.appendChild(sizeLink)
             })
 
-            leaderboard.sort(function(a, b) { return a.solveTime - b.solveTime })
+            leaderboard.sort(function(a, b) { return parseInt(a.solveTime.replace(":", "")) - parseInt(b.solveTime.replace(":", "")) })
             const sizeLeaders = leaderboard.filter(leader => leader.puzzleSize == boardSize)
 
             for (let i = 0; i < 5; i++) {
@@ -86,6 +86,7 @@
             if (time !== "") {
                 const leaderForm = document.createElement("form")
                 leaderForm.action = "handleLeader.php"
+                leaderForm.setAttribute("method", "POST")
 
                 const text = document.createElement("p")
                 text.innerText = "Your solve time was " + time + ".\nEnter your name for a chance to be on the leaderboard."

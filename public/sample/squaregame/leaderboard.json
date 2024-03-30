@@ -8,5 +8,15 @@
         "name": "OtherTest",
         "puzzleSize": 8,
         "solveTime": "4:59"
+    },
+    {
+        "name": "OtherTest",
+        "puzzleSize": 8,
+        "solveTime": "3:59"
+    },
+    {
+        "name": "OtherTest",
+        "puzzleSize": 8,
+        "solveTime": "8:59"
     }
 ]

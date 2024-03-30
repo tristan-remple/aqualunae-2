@@ -2,9 +2,9 @@
 
 // var_dump($_POST);
 
-$time = $_POST['time']
-$name = $_POST['name']
-$size = $_POST['size']
+$time = $_POST['time'];
+$name = $_POST['name'];
+$size = $_POST['size'];
 
 if ($time && $name && $size) {
 
