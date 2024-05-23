@@ -10,7 +10,7 @@
         "summary": "Consulted with client and project manager to establish requirements. Added new content to a WebFlow website, following existing design patterns. Used Google Scripting to improve and automate intake workflow. Did research into eLearning and other platforms.",
         "technologies": [
             "WebFlow",
-            "Google Scripting"
+            "GoogleScript"
         ],
         "include": true,
         "image": "addvocacy",
@@ -206,5 +206,42 @@
         "include": true,
         "image": "aqlu-2",
         "url": "/"
+    },
+    {
+        "title": "Shelter Asset Tracker",
+        "year": 2024,
+        "month": 5,
+        "client": {
+            "name": "Shelter Nova Scotia",
+            "url": "https://www.shelternovascotia.com/"
+        },
+        "summary": "Worked as project manager of a small team to meet client requirements. Communicated consistently and effectively with clients and team members. Created a complex React app. Helped with SCSS styling, expressJS backend, and mySQL database.",
+        "technologies": [
+            "reactJS",
+            "expressJS",
+            "MySQL",
+            "SCSS"
+        ],
+        "include": true,
+        "image": "sat",
+        "url": "https://github.com/tristan-remple/shelter-asset-tracker"
+    },
+    {
+        "title": "PSSHRN Website",
+        "year": 2024,
+        "month": 3,
+        "client": {
+            "name": "Post-Secondary Student Homelessness Research Network",
+            "url": "https://pssh.ca/"
+        },
+        "summary": "Created multiple sets of wireframes and layouts. Implemented a new WordPress theme with PHP. Curated and added content.",
+        "technologies": [
+            "WordPress",
+            "PHP",
+            "CSS"
+        ],
+        "include": true,
+        "image": "pssh",
+        "url": "https://pssh.ca/"
     }
 ]
