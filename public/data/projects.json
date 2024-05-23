@@ -161,9 +161,10 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "Created a vanilla JavaScript app that fetches data from an API to render an interactive game. Designed and implemented basic styling.",
+        "summary": "Created a vanilla JavaScript app that fetches data from an API to render an interactive game. Designed and implemented basic styling. Updated the game with Google Firebase Analytics to track interactions.",
         "technologies": [
             "JavaScript",
+            "GoogleAnalytics",
             "CSS"
         ],
         "include": true,
@@ -229,7 +230,7 @@
     {
         "title": "PSSHRN Website",
         "year": 2024,
-        "month": 3,
+        "month": 5,
         "client": {
             "name": "Post-Secondary Student Homelessness Research Network",
             "url": "https://pssh.ca/"
@@ -243,5 +244,21 @@
         "include": true,
         "image": "pssh",
         "url": "https://pssh.ca/"
+    },
+    {
+        "title": "JavaScript String Utilities",
+        "year": 2024,
+        "month": 4,
+        "client": {
+            "name": null,
+            "url": null
+        },
+        "summary": "Modularized and packaged some JavaScript functions for reuse.",
+        "technologies": [
+            "JavaScript"
+        ],
+        "include": true,
+        "image": "util",
+        "url": "https://www.npmjs.com/package/@aqualunae/util"
     }
 ]
