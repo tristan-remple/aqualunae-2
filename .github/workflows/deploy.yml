@@ -25,6 +25,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        debug: true
         script: |
           cd  /srv/www/aqualunae-2
           git pull origin main
