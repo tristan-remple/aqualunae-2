@@ -27,7 +27,7 @@ jobs:
     - name: Copy folder to remote
       uses: garygrossgarten/github-action-scp@release
       with:
-        local: dist
+        local: /dist
         remote: /srv/www/aqualunae-2/dist
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
