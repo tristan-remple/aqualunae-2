@@ -25,6 +25,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        port: 22
         debug: true
         script: |
           cd  /srv/www/aqualunae-2
