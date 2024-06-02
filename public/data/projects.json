@@ -185,11 +185,12 @@
             "expressJS",
             "reactJS",
             "mongoDB",
-            "Bootstrap"
+            "Bootstrap",
+            "SCSS"
         ],
         "include": true,
         "image": "birds",
-        "url": "https://w0226139-fullstack.onrender.com/"
+        "url": "https://harbour-flight.onrender.com/"
     },
     {
         "title": "AquaLunae",
@@ -255,7 +256,8 @@
         },
         "summary": "Modularized and packaged some JavaScript functions for reuse.",
         "technologies": [
-            "JavaScript"
+            "JavaScript",
+            "TypeScript"
         ],
         "include": true,
         "image": "util",

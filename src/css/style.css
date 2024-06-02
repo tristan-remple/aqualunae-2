@@ -61,10 +61,8 @@ h3 {
 
 #logo {
   width: 30%;
-  height: -moz-min-content;
   height: min-content;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   transform: translateX(-6rem) translateY(3rem) scale(150%);
 }
 
