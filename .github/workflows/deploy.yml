@@ -13,6 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: check secrets
+      env:
+        username: ${{ secrets.USERNAME }}
+      if: ${{ env.username == '' }}
+      run: 'echo "no username"'
+
     - name: Deploy using ssh
       uses: appleboy/ssh-action@v1.0.3
       with:
