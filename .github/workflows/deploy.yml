@@ -1,34 +1,25 @@
 name: Node.js CI
 
 on:
-    push:
-      branches:
-        - main
-    workflow_dispatch:
+  push:
+    branches: [ master ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: install dependencies
-      run: npm install
-
-    - name: build
-      run: npm run build
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-    - name: Copy folder to remote
-      uses: garygrossgarten/github-action-scp@release
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
       with:
-        local: /dist
-        remote: /srv/www/aqualunae-2/dist
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        script: |
+          cd  /srv/www/aqualunae-2
+          git pull origin main
+          git status
+          npm install
+          npm run build
