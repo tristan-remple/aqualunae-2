@@ -1,0 +1,34 @@
+name: Node.js CI
+
+on:
+    push:
+      branches:
+        - main
+    workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: install dependencies
+      run: npm install
+
+    - name: build
+      run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: Copy folder to remote
+      uses: garygrossgarten/github-action-scp@release
+      with:
+        local: dist
+        remote: /srv/www/aqualunae-2/dist
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
