@@ -7,10 +7,11 @@
             "name": "ADDvocacy",
             "url": "https://www.addvocacy.org/"
         },
-        "summary": "Consulted with client and project manager to establish requirements. Added new content to a WebFlow website, following existing design patterns. Used Google Scripting to improve and automate intake workflow. Did research into eLearning and other platforms.",
+        "summary": "My work term with ADDvocacy was a valuable learning experience in efficiencies and making adjustments and improvements to an existing system. On the public-facing website, I helped them keep links up to date and formatted the Community Resources page. A lot of my work that semester, however, was on internal systems. Together with digital architect Thuy Vo, I redesigned the intake process, making use of Google Scripting connected to Forms, Sheets, and more. The new process saves the business dozens of hours every semester.",
         "technologies": [
             "WebFlow",
-            "GoogleScript"
+            "GoogleScript",
+            "WCAG"
         ],
         "include": true,
         "image": "addvocacy",
@@ -24,15 +25,17 @@
             "name": null,
             "url": null
         },
-        "summary": "Created a vanilla JavaScript app with a high degree of interactivity, allowing the user to interact with the dataset. Implemented a simple PHP script to communicate with the server. Designed and implemented the front-end styling. Created a JSON dataset to reflect existing information.",
+        "summary": "The Aprimon Tracker's original form was a vanilla app for a single user, allowing that person to keep track of their collection in extensive detail. I really enjoyed working on it, and it's an impressive feat for the skills I was working with at the time. It uses a JSON dataset and a very simple PHP backend. The more impressive features are the sorting and filtering.",
         "technologies": [
             "JavaScript",
             "PHP",
-            "CSS"
+            "CSS",
+            "HTML"
         ],
         "include": true,
         "image": "aprimon",
-        "url": "sample/pkmn/index.html"
+        "url": "sample/pkmn/index.html",
+        "repo": "https://github.com/tristan-remple/aprimon"
     },
     {
         "title": "Countries Quiz",
@@ -59,13 +62,16 @@
             "name": null,
             "url": null
         },
-        "summary": "Created a vanilla JavaScript app that displays randomized data from a JSON dataset. Created the JSON dataset.",
+        "summary": "The Facet Cards applet was one of the first things I did using JavaScript as a programming language, as opposed to as an extension of webpage styling. It's a simple randomized reading using a dataset inspired by one of my creative projects, and the first project I did after starting school that wasn't for any coursework.",
         "technologies": [
-            "JavaScript"
+            "JavaScript",
+            "CSS",
+            "HTML"
         ],
         "include": true,
         "image": "facet",
-        "url": "sample/facet/index.html"
+        "url": "sample/facet/index.html",
+        "repo": "https://github.com/tristan-remple/facet-cards"
     },
     {
         "title": "Final Assignment XIV",
@@ -92,10 +98,11 @@
             "name": null,
             "url": null
         },
-        "summary": "Created a vanilla JavaScript page that displays an interactive gallery. Designed and implemented basic styling.",
+        "summary": "The Sample Gallery is one of several similar galleries I've built, over the years. In this case, I wanted to make it look professional and functional while being as easy to maintain as possible for an artist with no background in programming.",
         "technologies": [
             "JavaScript",
-            "CSS"
+            "CSS",
+            "HTML"
         ],
         "include": true,
         "image": "gallery",
@@ -109,7 +116,7 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "Created a Laravel app with full interactivity, including data manipulation and user registration. Met project requirements on a tight deadline. Implemented both sqlite and MySQL databases.",
+        "summary": "Dragons Social is a fairly simple Laravel social media app, created in our coursework to learn more about Laravel and PHP at large. It also uses a lot of Bootstrap styling, cutting out the work of writing styles from scratch while still delivering a clean look.",
         "technologies": [
             "PHP",
             "sqlite",
@@ -118,7 +125,8 @@
         ],
         "include": true,
         "image": "inet-final",
-        "url": "https://w0226139-inet-final.onrender.com/"
+        "url": "https://w0226139-inet-final.onrender.com/",
+        "repo": "https://github.com/tristan-remple/dragon-social"
     },
     {
         "title": "Transit Tracker",
@@ -151,7 +159,8 @@
         ],
         "include": false,
         "image": "nsrap",
-        "url": "sample/nsrap/index.php"
+        "url": "sample/nsrap/index.php",
+        "repo": "https://github.com/tristan-remple/nsrap"
     },
     {
         "title": "Squares Game",
@@ -161,7 +170,7 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "Created a vanilla JavaScript app that fetches data from an API to render an interactive game. Designed and implemented basic styling. Updated the game with Google Firebase Analytics to track interactions.",
+        "summary": "The Squares Game was one of the school's first projects involving API data. It uses some complex logic to check whether the game has been completed successfully. It also introduced us to some core concepts, such as making sure the data is not dependent on the display. In a later semester, myself and my classmate Michele extended this project and used Google and Firebase Analytics to track our friends' use of the game.",
         "technologies": [
             "JavaScript",
             "GoogleAnalytics",
@@ -179,18 +188,20 @@
             "name": "NSCC Coursework",
             "url": null
         },
-        "summary": "Created a full-stack JavaScript application, using node, express, and react over a mongo database. Met project requirements on a tight deadline. Created a JSON dataset to reflect existing information.",
+        "summary": "Harbour Flight was one of the larger projects I did as part of my NSCC coursework. According to the project guidelines, it needed to make fully interactive use of a medium-complexity dataset of our own making. Inspired by my mother's birdwatching and use of iNaturalist, I created an app that can be used to track bird sightings.",
         "technologies": [
             "nodeJS",
             "expressJS",
             "reactJS",
+            "JavaScript",
             "mongoDB",
             "Bootstrap",
             "SCSS"
         ],
         "include": true,
         "image": "birds",
-        "url": "https://harbour-flight.onrender.com/"
+        "url": "https://harbour-flight.onrender.com/",
+        "repo": "https://github.com/tristan-remple/harbour-flight"
     },
     {
         "title": "AquaLunae",
@@ -200,51 +211,62 @@
             "name": null,
             "url": null
         },
-        "summary": "Created a react app that formats and displays information from a JSON dataset. Designed and implemented complex styling using SCSS. Designed vector graphics. Created a JSON dataset to reflect existing information.",
+        "summary": "The AquaLunae website itself is a simple React applet. I wanted to use bold styling while also making the information easily browsable. In addition to the code of it, I also created the vector graphics.",
         "technologies": [
             "reactJS",
+            "nodeJS",
+            "JavaScript",
             "SCSS"
         ],
         "include": true,
         "image": "aqlu-2",
-        "url": "/"
+        "url": "/",
+        "repo": "https://github.com/tristan-remple/aqualunae-2"
     },
     {
         "title": "Shelter Asset Tracker",
-        "year": 2024,
-        "month": 5,
+        "year": 2025,
+        "month": 2,
         "client": {
             "name": "Shelter Nova Scotia",
             "url": "https://www.shelternovascotia.com/"
         },
-        "summary": "Worked as project manager of a small team to meet client requirements. Communicated consistently and effectively with clients and team members. Created a complex React app. Helped with SCSS styling, expressJS backend, and mySQL database.",
+        "summary": "The Shelter Asset Tracker is one of the projects I'm most proud of. Together with Michele Moore, I was hired by Shelter Nova Scotia to solve a long-running problem in their organization: keeping track of the furniture and appliances in their buildings. I worked as both the project manager and front-end developer, with Michele as the back-end developer and database architect. We had many meetings with Shelter's staff to establish their exact needs and goals. The final product is an app that's as easy as possible for their house managers to use, while also being a powerful reporting tool for their finances and operations. They're excited to put it to work, and we can't wait to hear how it helps them.",
         "technologies": [
+            "WCAG",
             "reactJS",
             "expressJS",
+            "JavaScript",
+            "nodeJS",
             "MySQL",
-            "SCSS"
+            "SCSS",
+            "Bootstrap",
+            "CSS"
         ],
         "include": true,
         "image": "sat",
-        "url": "https://sat-sample.onrender.com/"
+        "url": "https://sat-sample.onrender.com/",
+        "repo": "https://github.com/tristan-remple/shelter-asset-tracker"
     },
     {
         "title": "PSSHRN Website",
         "year": 2024,
-        "month": 5,
+        "month": 11,
         "client": {
             "name": "Post-Secondary Student Homelessness Research Network",
             "url": "https://pssh.ca/"
         },
-        "summary": "Created multiple sets of wireframes and layouts. Implemented a new WordPress theme with PHP. Curated and added content.",
+        "summary": "In my final semester at NSCC, I was hired by Lisa Mader through Applied Research, on behalf of the Post-Secondary Student Homelessness Research Network. A long-running and vitally relevant research project, one of the stipulations for their grant funding was to have their findings publicly available. Of the work that they did, the Global Resources Scan and the Literature Review needed the most attention to be web-ready: I converted these vast spreadsheets into a series of easily searchable WordPress posts, all contained in a custom theme to their specifications. It was a valuable exercise in working with a non-technical team.",
         "technologies": [
+            "WCAG",
             "WordPress",
             "PHP",
             "CSS"
         ],
         "include": true,
         "image": "pssh",
-        "url": "https://pssh.ca/"
+        "url": "https://pssh.ca/",
+        "repo": "https://github.com/tristan-remple/pssh"
     },
     {
         "title": "JavaScript String Utilities",
@@ -254,13 +276,39 @@
             "name": null,
             "url": null
         },
-        "summary": "Modularized and packaged some JavaScript functions for reuse.",
+        "summary": "The JavaScript String Utilities package is a package born of frustration. After copying the same string-to-title function into half a dozen projects, I decided to bundle it and some other common needs. It's been a dependency in a lot of my other projects since.",
         "technologies": [
             "JavaScript",
-            "TypeScript"
+            "TypeScript",
+            "nodeJS"
         ],
         "include": true,
         "image": "util",
-        "url": "https://www.npmjs.com/package/@aqualunae/util"
+        "url": "https://www.npmjs.com/package/@aqualunae/util",
+        "repo": "https://github.com/tristan-remple/util"
+    },
+    {
+        "title": "Aprimon Tracker Reboot",
+        "year": 2025,
+        "month": 2,
+        "client": {
+            "name": null,
+            "url": null
+        },
+        "summary": "The new version of the Aprimon Tracker is a full-featured multi-user app built in React and Redux, with TypeScript. It also leverages Mongoose and a MongoDB backend, instead of storing data in JSON files. The inner workings of it have been completely overhauled to be more efficient and powerful, while still keeping the same look and feel as the original. The accessibility of this app is still in progress.",
+        "technologies": [
+            "Redux",
+            "reactJS",
+            "expressJS",
+            "mongoDB",
+            "TypeScript",
+            "JavaScript",
+            "nodeJS",
+            "CSS"
+        ],
+        "include": true,
+        "image": "aprimon-2",
+        "url": "sample/apri2",
+        "repo": "https://github.com/tristan-remple/aprimon-2"
     }
 ]

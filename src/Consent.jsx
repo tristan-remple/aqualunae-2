@@ -4,7 +4,6 @@ import { setConsent } from "firebase/analytics"
 const Consent = () => {
 
     const consent = window.sessionStorage.getItem("consent") == null
-    console.log(consent)
     const [ visible, setVisible ] = useState(consent)
 
     const dismiss = () => {
@@ -19,7 +18,6 @@ const Consent = () => {
     }
 
     if (visible) {
-        console.log("displaying")
         return (
             <div id="consent">
                 <p>This site sends data to Google Analytics. Is that OK?</p>

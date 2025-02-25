@@ -82,11 +82,23 @@ h3 {
 #cover-info .tech-row {
   min-height: 250px;
 }
+#cover-info a {
+  color: #A5E2DE;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+#cover-info a:hover, #cover-info a:focus {
+  color: white;
+  text-decoration: underline;
+}
 
 .tech-icon {
   width: 5rem;
   height: 5rem;
   margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
   filter: saturate(50%) contrast(150%);
 }
 
@@ -350,6 +362,52 @@ nav a:hover, nav a:focus {
   letter-spacing: 2px;
 }
 
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.selected {
+  background-color: #6FB3B7;
+}
+
+.faded {
+  filter: saturate(10%);
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio-display {
+    width: 100%;
+  }
+  .screen {
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 25%;
+  }
+  .project-info {
+    width: 100%;
+    margin-top: 25%;
+  }
+  .p-odd .screen, .p-even .screen {
+    align-self: flex-start;
+  }
+  .p-odd .project, .p-even .project {
+    align-self: center;
+    margin-top: 3rem;
+  }
+  #cover {
+    flex-flow: column nowrap;
+    margin-top: 3rem;
+  }
+  #cover-info {
+    width: 100%;
+  }
+  #logo {
+    align-self: center;
+    transform: translateY(-2rem) scale(150%);
+  }
+}
 @media screen and (max-width: 600px) {
   .portfolio-display {
     width: 100%;
@@ -397,3 +455,5 @@ nav a:hover, nav a:focus {
     width: 90%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

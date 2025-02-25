@@ -3,20 +3,40 @@ import axios from 'axios'
 import ProjectEven from './ProjectEven'
 import ProjectOdd from './ProjectOdd'
 
-const Portfolio = () => {
+const Portfolio = ({ filter, maxLength }) => {
+
     const [ projects, setProjects ] = useState([])
+    const [ filteredProjects, setFilteredProjects ] = useState([])
     useEffect(() => {
         axios
             .get('../data/projects.json')
             .then(response => {
-                const toDisplay = response.data
+                const sortedProjects = response.data
                     .filter( item => item.include )
                     .sort( (a, b) => b.year - a.year || b.month - a.month )
-                setProjects(toDisplay)
+                setProjects(sortedProjects)
+                setFilteredProjects(sortedProjects)
             })
     }, [])
 
-    const toDisplay = projects.map( (item, index) => {
+    useEffect(() => {
+        if (filter.length == maxLength) {
+            setFilteredProjects(projects)
+        } else {
+            const filteredList = projects.filter(project => {
+                let result = false
+                filter.forEach(skill => {
+                    if (project.technologies.includes(skill)) {
+                        result = true
+                    }
+                })
+                return result
+            })
+            setFilteredProjects(filteredList)
+        }
+    }, [ filter ])
+
+    const toDisplay = filteredProjects.map( (item, index) => {
         if (index % 2 === 0) {
             return <ProjectEven key={item.title} data={item} />
         } else {
@@ -26,7 +46,7 @@ const Portfolio = () => {
 
     return (
         <div id="portfolio-outer">
-            <h2 id="portfolio">Portfolio</h2>
+            <h2 id="portfolio" tabIndex={ -1 }>Portfolio</h2>
             <img id="wave" src="img/wave.png" />
             <div id="portfolio-inner">
                 { toDisplay }

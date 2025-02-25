@@ -3,7 +3,7 @@ import { logEvent } from "firebase/analytics"
 
 const ProjectEven = ({ data }) => {
 
-    const { title, year, month, client, summary, technologies, image, url } = data;
+    const { title, year, month, client, summary, technologies, image, url, repo } = data;
 
     const monthNames = [
         "January", "February", "March", "April", "May", "June",
@@ -22,11 +22,14 @@ const ProjectEven = ({ data }) => {
             <div className="project">
                 <div className="project-info">
                     <h3>{title}</h3>
-                    { client.url ? <p>Built for <a href={client.url}>{client.name}</a> in {monthNames[month - 1]} of {year}.</p>
-                        : client.name ? <p>Built for {client.name} in {monthNames[month - 1]} of {year}.</p>
-                        : <p>Built in {monthNames[month - 1]} of {year}.</p> }
+                    { client.url ? <p>Completed for <a href={client.url}>{client.name}</a> in {monthNames[month - 1]} of {year}.</p>
+                        : client.name ? <p>Completed for {client.name} in {monthNames[month - 1]} of {year}.</p>
+                        : <p>Completed in {monthNames[month - 1]} of {year}.</p> }
                     <p>{summary}</p>
-                    <a className="button" href={url} onClick={ navClick } >View Here</a>
+                    <div className="row">
+                        <a className="button" href={url} onClick={ navClick } >View Here</a>
+                        { repo && <a className="button" href={repo} onClick={ navClick }>Code Repo</a> }
+                    </div>
                     <div className="tech-row">
                         { technologies.map(tech => <img 
                             key={`${title}-${tech}`}
